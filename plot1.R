@@ -6,7 +6,7 @@ myData$Global_active_power <- as.numeric(as.character(myData$Global_active_power
 
 # Plot One
 
-png(file="plot1.png")
+png(file="plot1.png", width = 480, height = 480, units="px")
 par(mfcol = c(1,1))
 hist(myData$Global_active_power,xlab = "Global Active Power (kilowatts)", col="red", 
      main = "Global Active Power" )

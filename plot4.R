@@ -14,7 +14,7 @@ myData$Sub_metering_3 <- as.numeric(as.character(myData$Sub_metering_3))
 
 #Plot 4
 
-png(file="plot4.png")
+png(file="plot4.png",width = 480, height = 480, units="px")
 
 par(mfcol = c(2,2))
 

@@ -8,7 +8,7 @@ myData$Sub_metering_2 <- as.numeric(as.character(myData$Sub_metering_2))
 myData$Sub_metering_3 <- as.numeric(as.character(myData$Sub_metering_3))
 
 #Plot 3
-png(file="plot3.png")
+png(file="plot3.png", width = 480, height = 480, units="px")
 par(mfcol = c(1,1))
 with(myData,plot(datetime,Sub_metering_1,type="l", ylab = "Energy sub metering", xlab = ""))
 with(myData,lines(datetime,Sub_metering_2,col="red"))
